@@ -1,0 +1,15 @@
+// BUZZER AND RED LED
+#define BUZZER_RED_LED  22
+
+//LIDAR SERVO
+#define LIDAR_SERVO  8
+
+//CLAMP SERVO
+#define CLAMP_SERVO  8
+
+// SPI OLED SCREEN
+#define OLED_MOSI   24
+#define OLED_CLK   	10
+#define OLED_DC    	11
+#define OLED_CS    	12
+#define OLED_RESET 	25
