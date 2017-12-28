@@ -1,4 +1,4 @@
 # anedubot
 Another educational robot
 
-![alt text](https://avatars3.githubusercontent.com/u/34789143?s=460&v=4)
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/anedubot_400.jpg)
