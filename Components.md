@@ -13,9 +13,10 @@ Basic model with magnetic encoders:
 | hardware parts |---|---|---|
 | 4 | M2x5 screws (for battery holder) |  |  |
 | 4 | M2 nuts (for battery holder) |  |  |
-| 4 | spacer M3x25 |  |  |
-| 4 | M3x5 screw |  |  |
-| 4 | M3 nuts |  |  |
+| 4 | spacer M3x25 (for main structure) |  |  |
+| 4 | M3x5 screw (for main structure) |  |  |
+| 4 | M3 nuts (for main structure)|  |  |
+| 2 | 12mm Chrome Steel Steel Ball Bearings (for main structure)|  |  | 
 
 
 Pick & place Kit:
