@@ -41,6 +41,12 @@ Basic model with magnetic encoders:
 | 1 | mini pushbutton switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5434/mini-pushbutton-switch-pcb-mount-2-pin-spst-50ma-5-pack) | 1 € |
 | 1 | Slide Switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5114/breadboard-friendly-spdt-slide-switch) | 1.5 € |
 | 1 | Capacitor 100uF | [RS-AMIDATA](https://ie.rs-online.com/web/p/aluminium-capacitors/7110842/) | 2 € |
+| PCB |---|---|---|
+| 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
+| 3D Frame |---|---|---|
+| 1 | 3D Frame|[3DHUBS](https://www.3dhubs.com)| 12€|
+| Total price |---|---|---|
+|---|---|---| € |
 
 
 Pick & place Kit:
