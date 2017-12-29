@@ -40,6 +40,7 @@ Basic model with magnetic encoders:
 | 1 | jumpers | [RS-AMIDATA](https://ie.rs-online.com/web/p/jumpers-shunts/6742397/) | 1 € |
 | 1 | mini pushbutton switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5434/mini-pushbutton-switch-pcb-mount-2-pin-spst-50ma-5-pack) | 1 € |
 | 1 | Slide Switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5114/breadboard-friendly-spdt-slide-switch) | 1.5 € |
+| 1 | Capacitor 100uF | [RS-AMIDATA](https://ie.rs-online.com/web/p/aluminium-capacitors/7110842/) | 2 € |
 
 
 Pick & place Kit:
