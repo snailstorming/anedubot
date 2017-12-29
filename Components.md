@@ -12,6 +12,7 @@ Basic model with magnetic encoders:
 |---|---|---|---|
 | 1 | Teensy 3.5 | [EXP-TECH](https://www.exp-tech.de/en/platforms/teensy/7786/teensy-3.5) | 25.95 € |
 | 1 | Bluetooth module | [DX](http://www.dx.com/p/jy-mcu-arduino-bluetooth-wireless-serial-port-module-104299) | 4.41 € |
+| 1 | SPI I2C OLED screen | [EBAY](https://www.ebay.com/itm/0-96-I2C-IIC-SPI-Serial-128X64-White-OLED-LCD-LED-Display-Module-for-Arduino-/182546048967) | 3 € |
 | hardware parts |---|---|---|
 | 4 | M2x5 screws (for battery holder) |  |  |
 | 4 | M2 nuts (for battery holder) |  |  |
