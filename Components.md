@@ -46,7 +46,7 @@ Basic model with magnetic encoders:
 | 3D Frame |---|---|---|
 | 1 | 3D Frame|[3DHUBS](https://www.3dhubs.com)| 12€|
 | Total price |---|---|---|
-|---|---|---| € |
+|---|---|---| 151 € |
 
 
 Pick & place Kit:
