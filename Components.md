@@ -30,10 +30,16 @@ Basic model with magnetic encoders:
 | 1 | Pin headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/7921/1x40-pin-break-away-headers-straight-10-pack) | 5 € |
 | 1 | Short pin headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/6759/2mm-pitch-40-pin-break-apart-male-headers-pack-of-5) | 3.5 € |
 | 1 | Short female socket headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/6760/2mm-pitch-25-pin-female-socket-headers-pack-of-5) | 4 € |
+| 1 | 1x4 female socket headers | [RS-AMIDATA](https://ie.rs-online.com/web/p/pcb-sockets/8282067/) | 1 € |
 | Other parts |---|---|---|
 | 1 | red led | [RS_AMIDATA](https://ie.rs-online.com/web/p/visible-leds/2285988/) | 1.3 € |
 | 1 | green led | [RS_AMIDATA](https://ie.rs-online.com/web/p/visible-leds/2286004/) | 1.3 € |
-| 1 |Piezo buzzer | [RS-AMIDATA](https://ie.rs-online.com/web/p/piezo-buzzer-components/5358253/?searchTerm=KPEG242&relevancy-data=636F3D3126696E3D4931384E53656172636847656E65726963266C753D656E266D6D3D6D61746368616C6C7061727469616C26706D3D5E2E2A2426706F3D31333326736E3D592673743D43415443485F414C4C5F44454641554C542673633D592677633D4E4F4E45267573743D4B504547323432267374613D4B50454732343226) | 2.5 € |
+| 1 | Piezo buzzer | [RS-AMIDATA](https://ie.rs-online.com/web/p/piezo-buzzer-components/5358253/?searchTerm=KPEG242&relevancy-data=636F3D3126696E3D4931384E53656172636847656E65726963266C753D656E266D6D3D6D61746368616C6C7061727469616C26706D3D5E2E2A2426706F3D31333326736E3D592673743D43415443485F414C4C5F44454641554C542673633D592677633D4E4F4E45267573743D4B504547323432267374613D4B50454732343226) | 2.5 € |
+| 1 | resitor 220ohms | [RS-AIMDATA](https://ie.rs-online.com/web/p/through-hole-fixed-resistors/7077612/) | 1.5 €|
+| 1 | resitor 22Kohms | [RS-AIMDATA](https://ie.rs-online.com/web/p/through-hole-fixed-resistors/7077779/) | 1.5 €|
+| 1 | jumpers | [RS-AMIDATA](https://ie.rs-online.com/web/p/jumpers-shunts/6742397/) | 1 € |
+| 1 | mini pushbutton switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5434/mini-pushbutton-switch-pcb-mount-2-pin-spst-50ma-5-pack) | 1 € |
+| 1 | Slide Switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5114/breadboard-friendly-spdt-slide-switch) | 1.5 € |
 
 
 Pick & place Kit:
