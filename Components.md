@@ -10,6 +10,7 @@ Basic model with magnetic encoders:
 | 1 | 5.5mm 2.1mm DC 8.4V 1A Power Adapter Supply | [Fasttech](https://www.fasttech.com/p/1284905) | 4 € |
 |---|---|---|---|
 | 1 | Teensy 3.5 | [EXP-TECH](https://www.exp-tech.de/en/platforms/teensy/7786/teensy-3.5) | 25.95 € |
+| 1 | Bluetooth module | [DX](http://www.dx.com/p/jy-mcu-arduino-bluetooth-wireless-serial-port-module-104299) | 4.41 € |
 | hardware parts |---|---|---|
 | 4 | M2x5 screws (for battery holder) |  |  |
 | 4 | M2 nuts (for battery holder) |  |  |
@@ -17,6 +18,12 @@ Basic model with magnetic encoders:
 | 4 | M3x5 screw (for main structure) |  |  |
 | 4 | M3 nuts (for main structure)|  |  |
 | 2 | 12mm Chrome Steel Steel Ball Bearings (for main structure)|  |  | 
+| Motor parts |---|---|---|
+| 2 | mini plastic gearmotor | [EXP-TECH](https://www.exp-tech.de/en/motors/dc-gearmotors/7707/120-1-mini-plastic-gearmotor-hp-offset-3mm-d-shaft-output-extended-motor-shaft?c=1356) | 13 € |
+| 1 | magnetic encoders | [EXP-TECH](https://www.exp-tech.de/en/sensors/magnet/7899/magnetic-encoder-pair-kit-for-20d-mm-metal-gearmotors-20-cpr-2.7-18v) | 10 € |
+| 1 | 40mm Wheel | [EXP-TECH](https://www.exp-tech.de/en/accessories/mechanical-components/7847/pololu-wheel-40x7mm-pair-red) | 5.5 € |
+| 1 | Gearmotor bracket | [EXP-TECH](https://www.exp-tech.de/en/motors/dc-gearmotors/6288/pololu-mini-plastic-gearmotor-bracket-pair-wide) | 4.5 € |
+| 1 | motor driver | [EXP-TECH](https://www.exp-tech.de/en/search?sSearch=drv8835) | 4.20 € |
 
 
 Pick & place Kit:
