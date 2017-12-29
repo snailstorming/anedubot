@@ -26,6 +26,10 @@ Basic model with magnetic encoders:
 | 1 | 40mm Wheel | [EXP-TECH](https://www.exp-tech.de/en/accessories/mechanical-components/7847/pololu-wheel-40x7mm-pair-red) | 5.5 € |
 | 1 | Gearmotor bracket | [EXP-TECH](https://www.exp-tech.de/en/motors/dc-gearmotors/6288/pololu-mini-plastic-gearmotor-bracket-pair-wide) | 4.5 € |
 | 1 | motor driver | [EXP-TECH](https://www.exp-tech.de/en/search?sSearch=drv8835) | 4.20 € |
+| Pin headers |---|---|---|
+| 1 | Pin headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/7921/1x40-pin-break-away-headers-straight-10-pack) | 5 € |
+| 1 | Short pin headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/6759/2mm-pitch-40-pin-break-apart-male-headers-pack-of-5) | 3.5 € |
+| 1 | Short female socket headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/6760/2mm-pitch-25-pin-female-socket-headers-pack-of-5) | 4 € |
 
 
 Pick & place Kit:
