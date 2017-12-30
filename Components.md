@@ -95,6 +95,10 @@ Space Mapping Kit:
 | 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
 | 3D Frame |---|---|---|
 | 1 | 3D Frame|[3DHUBS](https://www.3dhubs.com)| 5 € |
+| hardware parts |---|---|---|
+| 1 | M3x10 screw |  |  |
+| 1 | M3 nuts |  |  |
+| 2 | 2x8 wood screws |  |  |
 
 
 Computer Vision Kit:
