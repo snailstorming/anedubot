@@ -108,4 +108,5 @@ Computer Vision Kit:
 | Quantity | Description | Link | Price |
 |---|---|---|---|
 | 1 | (512 MB) Orange Pi Zero | [ALIEXPRESS](https://es.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=a219c.12010612.0.0.530ec9edjqFHso) | 11.5 € |
+| 1 | DC-DC 3A Step Down Converter Module | [DEAL-EXTREME](http://www.dx.com/p/48v-step-down-module-dc-dc-4-5-60v-switching-power-supply-blue-434337) | 3.5 € |
 
