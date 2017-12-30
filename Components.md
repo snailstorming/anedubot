@@ -63,7 +63,9 @@ Pick & place Kit:
 | 1 | M3x12 screw (for right clamp) |  |  |
 | 2 | 2x8 wood screws (for left clamp) |  |  |
 | 4 | M3 nuts |  |  |
-
+| Balls |---|---|---|
+| ? | colored ping pong balls |  |  |
+| 3 | 12mm Chrome Steel Steel Ball Bearings (for main structure)|  |  |
 
 
 https://www.exp-tech.de/en/accessories/cables/jumper-wires/7797/premium-female/male-extension-jumper-wires-40-x-6-150mm
@@ -72,14 +74,15 @@ Avoid Obstacles Kit:
 
 | Quantity | Description | Link | Price |
 |---|---|---|---|
-|  |  |  |  |
+| 2 | Digital Distance Sensor 5cm | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/4905/pololu-carrier-with-sharp-gp2y0d805z0f-digital-distance-sensor-5cm?c=1340) | 6 € |
+| 1 | Digital Distance Sensor 10cm | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/4906/pololu-carrier-with-sharp-gp2y0d810z0f-digital-distance-sensor-10cm?c=1340) | 6 € |
 
 
 Line Follower Kit:
 
 | Quantity | Description | Link | Price |
 |---|---|---|---|
-|  |  |  |  |
+| 1 | Digital Sensor Array | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/5235/qtr-3rc-reflectance-sensor-array) | 5 € |
 
 
 Space Mapping Kit:
