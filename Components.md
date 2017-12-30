@@ -56,6 +56,13 @@ Pick & place Kit:
 | 1 | Servo motor | [EBAY](https://www.ebay.com/itm/232208650170) | 6 € |
 | 3D Frame |---|---|---|
 | 1 | 3D Frame|[3DHUBS](https://www.3dhubs.com)| 8 € |
+| hardware parts |---|---|---|
+| 2 | M3x20 screw (for servo bracket) |  |  |
+| 2 | M3x10 screw (for servo) |  |  |
+| 1 | M3x12 screw (for right clamp) |  |  |
+| 2 | 2x8 wood screws (for left clamp) |  |  |
+| 4 | M3 nuts |  |  |
+
 
 
 https://www.exp-tech.de/en/accessories/cables/jumper-wires/7797/premium-female/male-extension-jumper-wires-40-x-6-150mm
