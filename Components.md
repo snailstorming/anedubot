@@ -71,6 +71,7 @@ Pick & place Kit:
 Avoid Obstacles & Line Follower Kit:
 
 | Quantity | Description | Link | Price |
+|---|---|---|---|
 | 1 | Female-Male Jumper Wires | [EXP-TECH](https://www.exp-tech.de/en/accessories/cables/jumper-wires/7797/premium-female/male-extension-jumper-wires-40-x-6-150mm) | 4.5 € |
 | 5 | M2x5 screw  |  |  |
 | Avoid Obstacles |---|---|---|
