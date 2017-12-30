@@ -99,6 +99,8 @@ Space Mapping Kit:
 | 1 | M3x10 screw |  |  |
 | 1 | M3 nuts |  |  |
 | 2 | 2x8 wood screws |  |  |
+| 2 | M2x5 screw |  |  |
+| 2 | M2 nuts |  |  |
 
 
 Computer Vision Kit:
