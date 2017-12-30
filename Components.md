@@ -109,6 +109,8 @@ Computer Vision Kit:
 |---|---|---|---|
 | 1 | (512 MB) Orange Pi Zero | [ALIEXPRESS](https://es.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=a219c.12010612.0.0.530ec9edjqFHso) | 11.5 € |
 | 1 | 32GB MircoSD | Amazon? | 17 € ? |
+| 1 | ELP Mjpeg 640x480 VGA USB Camera | [AMAZON](https://www.amazon.es/dp/B017GXPULW/ref=pe_3310721_189395781_TE_dp_1) | 35 € |
+| 1 | 2.1mm F2.0 Lens | [ALIEXPRESS](https://www.aliexpress.com/item/5MP-HD-2-1mm-CCTV-IP-Camera-MTV-Board-IR-Lens-F2-0-Aperture-1-2/32667906561.html?ws_ab_test=searchweb0_0,searchweb201602_5_10152_5000015_10151_10065_10344_10068_10342_10547_10343_51102_10340_10548_10341_5130015_10084_10083_10307_10301_10303_10312_10059_10313_10314_10184_10534_5790011_100031_10604_10103_10605_10594_5060015_10142,searchweb201603_25,ppcSwitch_5&algo_expid=bf262e34-a725-44e5-808a-5dc5669ddc59-0&algo_pvid=bf262e34-a725-44e5-808a-5dc5669ddc59&rmStoreLevelAB=5) | 4 € |
 | 1 | DC-DC 3A Step Down Converter Module | [DEAL-EXTREME](http://www.dx.com/p/48v-step-down-module-dc-dc-4-5-60v-switching-power-supply-blue-434337) | 3.5 € |
 | 10 | M3x10 screw |  |  |
 | 10 | M3 metal nuts |  |  |
