@@ -73,51 +73,52 @@ Avoid Obstacles & Line Follower Kit:
 
 | ID | Quantity | Description | Link | Price |
 |---|---|---|---|---|
-| 1 | Female-Male Jumper Wires | [EXP-TECH](https://www.exp-tech.de/en/accessories/cables/jumper-wires/7797/premium-female/male-extension-jumper-wires-40-x-6-150mm) | 4.5 € |
-| 5 | M2x5 screw  |  |  |
+| 47 | 1 | Female-Male Jumper Wires | [EXP-TECH](https://www.exp-tech.de/en/accessories/cables/jumper-wires/7797/premium-female/male-extension-jumper-wires-40-x-6-150mm) | 4.5 € |
+| 48 | 5 | M2x5 screw  |  |  |
 | Avoid Obstacles |---|---|---|
-| 2 | Digital Distance Sensor 5cm | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/4905/pololu-carrier-with-sharp-gp2y0d805z0f-digital-distance-sensor-5cm?c=1340) | 6 € |
-| 1 | Digital Distance Sensor 10cm | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/4906/pololu-carrier-with-sharp-gp2y0d810z0f-digital-distance-sensor-10cm?c=1340) | 6 € |
-| Line Follower |---|---|---|
-| 1 | Digital Sensor Array | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/5235/qtr-3rc-reflectance-sensor-array) | 5 € |
-| 2 | M2 nuts |  |  |
+| 49 | 2 | Digital Distance Sensor 5cm | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/4905/pololu-carrier-with-sharp-gp2y0d805z0f-digital-distance-sensor-5cm?c=1340) | 6 € |
+| 50 | 1 | Digital Distance Sensor 10cm | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/4906/pololu-carrier-with-sharp-gp2y0d810z0f-digital-distance-sensor-10cm?c=1340) | 6 € |
+|---|---| Line Follower |---|---|
+| 51 | Digital Sensor Array | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/5235/qtr-3rc-reflectance-sensor-array) | 5 € |
+| 52 | 2 | M2 nuts |  |  |
 
 
 Space Mapping Kit:
 
-| Quantity | Description | Link | Price |
-|---|---|---|---|
-| 1 | Servo motor | [HOBBYKING](https://hobbyking.com/es_es/power-hd-1900a-servo-1-7kg-0-08sec-9g.html) | 4€ |
-| 2 | Time-of-Flight Distance Sensor | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/7557/pololu-vl53l0x-time-of-flight-distance-sensor-carrier-with-voltage-regulator-200cm-max?c=1340) | 30 € |
-| 2 | Ribbon Crimp Connector - 6-pin (2x3, Female) | [RS_AMIDATA](https://ie.rs-online.com/web/p/idc-connectors/8323648/) | 1.5 € |
-| 2 | 2x3 Pin Shrouded Header | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/4606/2x3-pin-shrouded-header?number=EXP-R05-210) | 1.5 € |
-| 1 | Ribbon Cable - 6 wire | [EXP-TECH](https://www.exp-tech.de/en/accessories/cables/sonstige/5822/ribbon-cable-6-wire-15ft) | 3.5 € |
-| PCB |---|---|---|
-| 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
-| 3D Frame |---|---|---|
-| 1 | 3D Frame|[3DHUBS](https://www.3dhubs.com)| 5 € |
-| hardware parts |---|---|---|
-| 1 | M3x10 screw |  |  |
-| 1 | M3 nuts |  |  |
-| 2 | 2x8 wood screws |  |  |
-| 2 | M2x5 screw |  |  |
-| 2 | M2 nuts |  |  |
+| ID | Quantity | Description | Link | Price |
+|---|---|---|---|---|
+| 53 | 1 | Servo motor | [HOBBYKING](https://hobbyking.com/es_es/power-hd-1900a-servo-1-7kg-0-08sec-9g.html) | 4€ |
+| 54 | 2 | Time-of-Flight Distance Sensor | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/7557/pololu-vl53l0x-time-of-flight-distance-sensor-carrier-with-voltage-regulator-200cm-max?c=1340) | 30 € |
+| 55 | 2 | Ribbon Crimp Connector - 6-pin (2x3, Female) | [RS_AMIDATA](https://ie.rs-online.com/web/p/idc-connectors/8323648/) | 1.5 € |
+| 56 | 2 | 2x3 Pin Shrouded Header | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/4606/2x3-pin-shrouded-header?number=EXP-R05-210) | 1.5 € |
+| 57 | 1 | Ribbon Cable - 6 wire | [EXP-TECH](https://www.exp-tech.de/en/accessories/cables/sonstige/5822/ribbon-cable-6-wire-15ft) | 3.5 € |
+|---|---| **PCB** |---|---|
+| 58 | 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
+|---|---| **3D Frame** |---|---|
+| 59 | 1 | lidar_support |[3DHUBS](https://www.3dhubs.com)| 5 € |
+|---|---| **hardware parts** |---|---|
+| 60 | 1 | M3x10 screw |  |  |
+| 61 | 1 | M3 nuts |  |  |
+| 62 | 2 | 2x8 wood screws |  |  |
+| 63 | 2 | M2x5 screw |  |  |
+| 64 | 2 | M2 nuts |  |  |
 
 
 Computer Vision Kit:
 
-| Quantity | Description | Link | Price |
-|---|---|---|---|
-| 1 | (512 MB) Orange Pi Zero | [ALIEXPRESS](https://es.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=a219c.12010612.0.0.530ec9edjqFHso) | 11.5 € |
-| 1 | 32GB MircoSD | Amazon? | 17 € ? |
-| 1 | ELP Mjpeg 640x480 VGA USB Camera | [AMAZON](https://www.amazon.es/dp/B017GXPULW/ref=pe_3310721_189395781_TE_dp_1) | 35 € |
-| 1 | 2.1mm F2.0 Lens | [ALIEXPRESS](https://www.aliexpress.com/item/5MP-HD-2-1mm-CCTV-IP-Camera-MTV-Board-IR-Lens-F2-0-Aperture-1-2/32667906561.html?ws_ab_test=searchweb0_0,searchweb201602_5_10152_5000015_10151_10065_10344_10068_10342_10547_10343_51102_10340_10548_10341_5130015_10084_10083_10307_10301_10303_10312_10059_10313_10314_10184_10534_5790011_100031_10604_10103_10605_10594_5060015_10142,searchweb201603_25,ppcSwitch_5&algo_expid=bf262e34-a725-44e5-808a-5dc5669ddc59-0&algo_pvid=bf262e34-a725-44e5-808a-5dc5669ddc59&rmStoreLevelAB=5) | 4 € |
-| 1 | Type A USB Connector Plug | [RS-AMIDATA](https://ie.rs-online.com/web/p/type-a-usb-connectors/6742268/?searchTerm=674-2268&relevancy-data=636F3D3126696E3D4931384E525353746F636B4E756D626572266C753D656E266D6D3D6D61746368616C6C26706D3D5E285C647B362C377D5B4161426250705D297C285C647B337D5B5C732D2F255C2E2C5D5C647B332C347D5B4161426250705D3F292426706F3D3126736E3D592673743D52535F53544F434B5F4E554D4245522677633D4E4F4E45267573743D3637342D32323638267374613D3637343232363826) | 3.5 € |
-| 1 | DC-DC 3A Step Down Converter Module | [DEAL-EXTREME](http://www.dx.com/p/48v-step-down-module-dc-dc-4-5-60v-switching-power-supply-blue-434337) | 3.5 € |
-| 10 | M3x10 screw |  |  |
-| 10 | M3 metal nuts |  |  |
-| 6 | M3 platic nuts |  |  |
-| 4 | M2x8 screw |  |  |
-| 4 | M2 metal nuts |  |  |
-| 3D Frame |---|---|---|
-| 1 | 3D Frame | [3DHUBS](https://www.3dhubs.com) | 8 € |
+| ID | Quantity | Description | Link | Price |
+|---|---|---|---|---|
+| 65 | 1 | (512 MB) Orange Pi Zero | [ALIEXPRESS](https://es.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=a219c.12010612.0.0.530ec9edjqFHso) | 11.5 € |
+| 66 | 1 | 32GB MircoSD | Amazon? | 17 € ? |
+| 67 | 1 | ELP Mjpeg 640x480 VGA USB Camera | [AMAZON](https://www.amazon.es/dp/B017GXPULW/ref=pe_3310721_189395781_TE_dp_1) | 35 € |
+| 68 | 1 | 2.1mm F2.0 Lens | [ALIEXPRESS](https://www.aliexpress.com/item/5MP-HD-2-1mm-CCTV-IP-Camera-MTV-Board-IR-Lens-F2-0-Aperture-1-2/32667906561.html?ws_ab_test=searchweb0_0,searchweb201602_5_10152_5000015_10151_10065_10344_10068_10342_10547_10343_51102_10340_10548_10341_5130015_10084_10083_10307_10301_10303_10312_10059_10313_10314_10184_10534_5790011_100031_10604_10103_10605_10594_5060015_10142,searchweb201603_25,ppcSwitch_5&algo_expid=bf262e34-a725-44e5-808a-5dc5669ddc59-0&algo_pvid=bf262e34-a725-44e5-808a-5dc5669ddc59&rmStoreLevelAB=5) | 4 € |
+| 69 | 1 | Type A USB Connector Plug | [RS-AMIDATA](https://ie.rs-online.com/web/p/type-a-usb-connectors/6742268/?searchTerm=674-2268&relevancy-data=636F3D3126696E3D4931384E525353746F636B4E756D626572266C753D656E266D6D3D6D61746368616C6C26706D3D5E285C647B362C377D5B4161426250705D297C285C647B337D5B5C732D2F255C2E2C5D5C647B332C347D5B4161426250705D3F292426706F3D3126736E3D592673743D52535F53544F434B5F4E554D4245522677633D4E4F4E45267573743D3637342D32323638267374613D3637343232363826) | 3.5 € |
+| 70 | 1 | DC-DC 3A Step Down Converter Module | [DEAL-EXTREME](http://www.dx.com/p/48v-step-down-module-dc-dc-4-5-60v-switching-power-supply-blue-434337) | 3.5 € |
+| 71 | 10 | M3x10 screw |  |  |
+| 72 | 10 | M3 metal nuts |  |  |
+| 73 | 6 | M3 platic nuts |  |  |
+| 74 | 4 | M2x8 screw |  |  |
+| 75 | 4 | M2 metal nuts |  |  |
+|---|---| **3D Frame** |---|---|
+| 76 | 1 | opy_support | [3DHUBS](https://www.3dhubs.com) | € |
+| 77 | 1 | camera_support | [3DHUBS](https://www.3dhubs.com) | 8 € |
