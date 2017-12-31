@@ -46,7 +46,7 @@ Basic model with magnetic encoders:
 | 35 | 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
 |---|---| 3D Frame |---|---|
 | 36 | 1 | Base.scad |[3DHUBS](https://www.3dhubs.com)| 12€|
-| Total price |---|---|---|---|
+|---|---| Total price |---|---|
 |---|---|---|---| 153 € |
 
 
