@@ -90,7 +90,7 @@ Space Mapping Kit:
 | 2 | Time-of-Flight Distance Sensor | [EXP-TECH](https://www.exp-tech.de/en/sensors/distanceapproximation/7557/pololu-vl53l0x-time-of-flight-distance-sensor-carrier-with-voltage-regulator-200cm-max?c=1340) | 30 € |
 | 2 | Ribbon Crimp Connector - 6-pin (2x3, Female) | [RS_AMIDATA](https://ie.rs-online.com/web/p/idc-connectors/8323648/) | 1.5 € |
 | 2 | 2x3 Pin Shrouded Header | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/4606/2x3-pin-shrouded-header?number=EXP-R05-210) | 1.5 € |
-| 1 | Ribbon Cable - 6 wire | [EXP-TECH](https://www.exp-tech.de/en/accessories/cables/sonstige/5822/ribbon-cable-6-wire-15ft) | € |
+| 1 | Ribbon Cable - 6 wire | [EXP-TECH](https://www.exp-tech.de/en/accessories/cables/sonstige/5822/ribbon-cable-6-wire-15ft) | 3.5 € |
 | PCB |---|---|---|
 | 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
 | 3D Frame |---|---|---|
