@@ -2,7 +2,7 @@ Basic model with magnetic encoders:
 
 | ID | Quantity | Description | Link | Price |
 |---|---|---|---|---|
-| Power Supply |---|---|---|---|
+|---|---| Power Supply |---|---|
 | 01 | 2  | 3.7V 18650 Lithium-ion Battery | [RS-AMIDATA](https://ie.rs-online.com/web/p/speciality-size-rechargeable-batteries/7887261/) | 17.18 € |
 | 02 | 1 | Battery holder with PCM | [Fasttech](https://www.fasttech.com/p/1279500) | 4 € |
 | 03 | 1 | DC-DC 5A Step Down Converter Module | [aliexpress](https://www.aliexpress.com/item/DC-DC-4-5-30V-to-0-8-30V-5A-Step-Down-Converter-Module-Circuit-Voltage/1724909910.html?ws_ab_test=searchweb0_0,searchweb201602_5_10152_10151_10065_10344_10068_10342_10547_10343_51102_10340_10548_10341_10084_10083_10307_10301_10303_10312_10313_10059_10314_10184_10534_100031_10604_10103_10605_10594_10142,searchweb201603_1,ppcSwitch_5&algo_expid=59acf9db-747c-4bae-9396-6da0b7c3cc02-29&algo_pvid=59acf9db-747c-4bae-9396-6da0b7c3cc02&rmStoreLevelAB=5) or [es.aliexpress](https://es.aliexpress.com/item/DC-DC-4-5V-30V-to-0-8V-30V-5A-Step-Down-Power-Apply/32332363457.html) | 4.5€ |
@@ -14,25 +14,25 @@ Basic model with magnetic encoders:
 | 08 | 1 | Teensy 3.5 | [EXP-TECH](https://www.exp-tech.de/en/platforms/teensy/7786/teensy-3.5) | 25.95 € |
 | 09 | 1 | Bluetooth module | [DX](http://www.dx.com/p/jy-mcu-arduino-bluetooth-wireless-serial-port-module-104299) | 4.41 € |
 | 10 | 1 | SPI I2C OLED screen | [EBAY](https://www.ebay.com/itm/0-96-I2C-IIC-SPI-Serial-128X64-White-OLED-LCD-LED-Display-Module-for-Arduino-/182546048967) | 3 € |
-| hardware parts |---|---|---|---|
+|---|---| hardware parts |---|---|
 | 11 | 4 | M2x5 screws (for battery holder) |  |  |
 | 12 | 4 | M2 nuts (for battery holder) |  |  |
 | 13 | 4 | spacer M3x25 (for main structure) |  |  |
 | 14 | 4 | M3x5 screw (for main structure) |  |  |
 | 15 | 4 | M3 nuts (for main structure)|  |  |
 | 16 | 2 | 12mm Chrome Steel Steel Ball Bearings (for main structure)|  |  | 
-| Motor parts |---|---|---|---|
+|---|---| Motor parts |---|---|
 | 17 | 2 | mini plastic gearmotor | [EXP-TECH](https://www.exp-tech.de/en/motors/dc-gearmotors/7707/120-1-mini-plastic-gearmotor-hp-offset-3mm-d-shaft-output-extended-motor-shaft?c=1356) | 13 € |
 | 18 | 1 | magnetic encoders | [EXP-TECH](https://www.exp-tech.de/en/sensors/magnet/7899/magnetic-encoder-pair-kit-for-20d-mm-metal-gearmotors-20-cpr-2.7-18v) | 10 € |
 | 19 | 1 | 40mm Wheel | [EXP-TECH](https://www.exp-tech.de/en/accessories/mechanical-components/7847/pololu-wheel-40x7mm-pair-red) | 5.5 € |
 | 20 | 1 | Gearmotor bracket | [EXP-TECH](https://www.exp-tech.de/en/motors/dc-gearmotors/6288/pololu-mini-plastic-gearmotor-bracket-pair-wide) | 4.5 € |
 | 21 | 1 | motor driver | [EXP-TECH](https://www.exp-tech.de/en/search?sSearch=drv8835) | 4.20 € |
-| Pin headers |---|---|---|---|
+|---|---| Pin headers |---|---|
 | 22 | 1 | Pin headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/7921/1x40-pin-break-away-headers-straight-10-pack) | 5 € |
 | 23 | 1 | Short pin headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/6759/2mm-pitch-40-pin-break-apart-male-headers-pack-of-5) | 3.5 € |
 | 24 | 1 | Short female socket headers | [EXP-TECH](https://www.exp-tech.de/en/accessories/connectors/6760/2mm-pitch-25-pin-female-socket-headers-pack-of-5) | 4 € |
 | 25 | 1 | 1x4 female socket headers | [RS-AMIDATA](https://ie.rs-online.com/web/p/pcb-sockets/8282067/) | 1 € |
-| Other parts |---|---|---|---|
+|---|---| Other parts |---|---|
 | 26 | 1 | red led | [RS_AMIDATA](https://ie.rs-online.com/web/p/visible-leds/2285988/) | 1.3 € |
 | 27 | 1 | green led | [RS_AMIDATA](https://ie.rs-online.com/web/p/visible-leds/2286004/) | 1.3 € |
 | 28 | 1 | Piezo buzzer | [RS-AMIDATA](https://ie.rs-online.com/web/p/piezo-buzzer-components/5358253/?searchTerm=KPEG242&relevancy-data=636F3D3126696E3D4931384E53656172636847656E65726963266C753D656E266D6D3D6D61746368616C6C7061727469616C26706D3D5E2E2A2426706F3D31333326736E3D592673743D43415443485F414C4C5F44454641554C542673633D592677633D4E4F4E45267573743D4B504547323432267374613D4B50454732343226) | 2.5 € |
@@ -42,9 +42,9 @@ Basic model with magnetic encoders:
 | 32 | 1 | mini pushbutton switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5434/mini-pushbutton-switch-pcb-mount-2-pin-spst-50ma-5-pack) | 1 € |
 | 33 | 1 | Slide Switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5114/breadboard-friendly-spdt-slide-switch) | 1.5 € |
 | 34 | 1 | Capacitor 100uF | [RS-AMIDATA](https://ie.rs-online.com/web/p/aluminium-capacitors/7110842/) | 2 € |
-| PCB |---|---|---|---|
+|---|---| PCB |---|---|
 | 35 | 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
-| 3D Frame |---|---|---|---|
+|---|---| 3D Frame |---|---|
 | 36 | 1 | Base.scad |[3DHUBS](https://www.3dhubs.com)| 12€|
 | Total price |---|---|---|---|
 |---|---|---|---| 153 € |
