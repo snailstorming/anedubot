@@ -46,32 +46,33 @@ Basic model with magnetic encoders:
 | 35 | 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
 |---|---| **3D Frame** |---|---|
 | 36 | 1 | Base.scad |[3DHUBS](https://www.3dhubs.com)| 12€|
-|**---|---| Total price |---|---|
-|---|---|---|---| 153 €** |
+|---|---| **Total price** |---|---|
+|---|---|---|---| **153 €** |
 
 
 Pick & place Kit:
 
-| Quantity | Description | Link | Price |
-|---|---|---|---|
-| 1 | Servo motor | [EBAY](https://www.ebay.com/itm/232208650170) | 6 € |
-| 3D Frame |---|---|---|
-| 1 | 3D Frame|[3DHUBS](https://www.3dhubs.com)| 8 € |
-| hardware parts |---|---|---|
-| 2 | M3x20 screw (for servo bracket) |  |  |
-| 2 | M3x10 screw (for servo) |  |  |
-| 1 | M3x12 screw (for right clamp) |  |  |
-| 2 | 2x8 wood screws (for left clamp) |  |  |
-| 4 | M3 nuts |  |  |
-| Balls |---|---|---|
-| ? | colored ping pong balls |  |  |
-| 3 | 12mm Chrome Steel Steel Ball Bearings (for main structure)|  |  |
+| ID | Quantity | Description | Link | Price |
+|---|---|---|---|---|
+| 37 | 1 | Servo motor | [EBAY](https://www.ebay.com/itm/232208650170) | 6 € |
+|---|---| ***3D Frame*** |---|---|
+| 38 | 1 | Clamp |[3DHUBS](https://www.3dhubs.com)|  € |
+| 39 | 1 | Clamp_servo_support |[3DHUBS](https://www.3dhubs.com)| 8 € |
+|---|---| ***hardware parts*** |---|---|
+| 40 | 2 | M3x20 screw (for servo bracket) |  |  |
+| 41 | 2 | M3x10 screw (for servo) |  |  |
+| 42 | 1 | M3x12 screw (for right clamp) |  |  |
+| 43 | 2 | 2x8 wood screws (for left clamp) |  |  |
+| 44 | 4 | M3 nuts |  |  |
+|---|---| ***Balls*** |---|---|
+| 45 | ? | colored ping pong balls |  |  |
+| 46 | 3 | 12mm Chrome Steel Steel Ball Bearings (for main structure)|  |  |
 
 
 Avoid Obstacles & Line Follower Kit:
 
-| Quantity | Description | Link | Price |
-|---|---|---|---|
+| ID | Quantity | Description | Link | Price |
+|---|---|---|---|---|
 | 1 | Female-Male Jumper Wires | [EXP-TECH](https://www.exp-tech.de/en/accessories/cables/jumper-wires/7797/premium-female/male-extension-jumper-wires-40-x-6-150mm) | 4.5 € |
 | 5 | M2x5 screw  |  |  |
 | Avoid Obstacles |---|---|---|
