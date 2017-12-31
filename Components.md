@@ -118,3 +118,5 @@ Computer Vision Kit:
 | 6 | M3 platic nuts |  |  |
 | 4 | M2x8 screw |  |  |
 | 4 | M2 metal nuts |  |  |
+| 3D Frame |---|---|---|
+| 1 | 3D Frame | [3DHUBS](https://www.3dhubs.com) | 8 € |
