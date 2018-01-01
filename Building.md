@@ -29,6 +29,7 @@ Front main PCB:
 | J4 | 22 | Pin headers | 1x2 |
 
 back main PCB:
+
 | ID_PCB | ID_Component | Description | Size |
 |---|---|---|---|
 | P10 | 22 | Pin headers | 1x2 |
