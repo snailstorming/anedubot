@@ -13,6 +13,7 @@ Front main PCB:
 | C1 | 34 | 100uF capacitor | 1|
 | C2 | 34 | 100uF capacitor | 1|
 | CONN1 | 04 | Power jack socket | 1 |
+| REG1 | 06 | 5V 1A voltage regulator | 1 |
 | D1 | 24 | Short female socket headers | 1x6 |
 | P1 | 24 | Short female socket headers | 1x7 |
 | P2 | 24 | Short female socket headers | 1x7 |
