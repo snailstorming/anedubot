@@ -1,7 +1,7 @@
 Main PCB, front face:
 
 | ID_PCB | ID_Component | Description | Size |
-|---|---|---|
+|---|---|---|---|
 | D1 | 26 | Red led | 1 |
 | D2 | 27 | Green led | 1 |
 | R1 | 30 | 22K resistor | 1 |
