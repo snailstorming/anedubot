@@ -43,11 +43,11 @@ Basic model with magnetic encoders:
 | 33 | 1 | Slide Switch | [RS-AMIDATA](https://www.exp-tech.de/en/accessories/buttonsswitches/5114/breadboard-friendly-spdt-slide-switch) | 1.5 € |
 | 34 | 1 | Capacitor 100uF | [RS-AMIDATA](https://ie.rs-online.com/web/p/aluminium-capacitors/7110842/) | 2 € |
 |---|---| **PCB** |---|---|
-| 35 | 1 | PCB|[PCB Way](https://www.pcbway.com/)| 5€|
+| 35 | 1 | PCB|[PCB Way](https://www.pcbway.com/)| 15€|
 |---|---| **3D Frame** |---|---|
 | 36 | 1 | Base.scad |[3DHUBS](https://www.3dhubs.com)| 12€|
 |---|---| **Total price** |---|---|
-|---|---|---|---| **153 €** |
+|---|---|---|---| **163 €** |
 
 
 Pick & place Kit:
