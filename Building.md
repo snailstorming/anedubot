@@ -14,7 +14,7 @@ Front main PCB:
 | C2 | 34 | 100uF capacitor | 1|
 | CONN1 | 04 | Power jack socket | 1 |
 | REG1 | 06 | 5V 1A voltage regulator | 1 |
-| D1 | 24 | Short female socket headers | 1x6 |
+| O1 | 24 | Short female socket headers | 1x6 |
 | P1 | 24 | Short female socket headers | 1x7 |
 | P2 | 24 | Short female socket headers | 1x7 |
 | P3 | 24 | Short female socket headers | 1x15 |
@@ -46,3 +46,7 @@ back main PCB:
 | P20 | 22 | Pin headers | 1x1 |
 | P21 | 22 | Pin headers | 1x2 |
 | P22 | 22 | Pin headers | 1x6 |
+
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front.jpg)
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_back.jpg)
