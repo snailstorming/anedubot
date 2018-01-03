@@ -49,4 +49,7 @@ back main PCB:
 
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front.jpg)
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_back_r.jpg)
+
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_back.jpg)
