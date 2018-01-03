@@ -29,6 +29,11 @@ Front main PCB:
 | J3 | 22 | Pin headers | 1x2 |
 | J4 | 22 | Pin headers | 1x2 |
 
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front.jpg)
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front_r.jpg)
+
+
 back main PCB:
 
 | ID_PCB | ID_Component | Description | Size |
@@ -47,11 +52,11 @@ back main PCB:
 | P21 | 22 | Pin headers | 1x2 |
 | P22 | 22 | Pin headers | 1x6 |
 
-
-![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front.jpg)
-
-![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front_r.jpg)
-
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_back.jpg)
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_back2_r.jpg)
+
+P14 & P15 detail:
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/P14_P15.jpg)
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/P14_P15.jpg)
