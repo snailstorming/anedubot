@@ -59,4 +59,3 @@ back main PCB:
 P14 & P15 detail:
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/P14_P15.jpg)
-![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/P14_P15.jpg)
