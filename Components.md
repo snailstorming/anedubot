@@ -122,3 +122,6 @@ Computer Vision Kit:
 |---|---| **3D Frame** |---|---|
 | 76 | 1 | opy_support | [3DHUBS](https://www.3dhubs.com) | € |
 | 77 | 1 | camera_support | [3DHUBS](https://www.3dhubs.com) | 8 € |
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front.jpg)
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_back.jpg)
