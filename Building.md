@@ -1,4 +1,4 @@
-Front main PCB:
+# Front main PCB:
 
 | ID_PCB | ID_Component | Description | Size |
 |---|---|---|---|
@@ -36,7 +36,7 @@ Front main PCB:
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front_r.jpg)
 
 
-back main PCB:
+# Back main PCB:
 
 | ID_PCB | ID_Component | Description | Size |
 |---|---|---|---|
