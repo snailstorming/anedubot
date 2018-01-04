@@ -29,7 +29,7 @@ Front main PCB:
 | J3 | 22 | Pin headers | 1x2 |
 | J4 | 22 | Pin headers | 1x2 |
 
- Be careful to observe D1, D2, BZ1, C1,C2, REG1 and P9 polarity. 
+**WARNING** Be careful to observe D1, D2, BZ1, C1,C2, REG1 and P9 polarity. 
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front.jpg)
 
@@ -54,10 +54,12 @@ back main PCB:
 | P21 | 22 | Pin headers | 1x2 |
 | P22 | 22 | Pin headers | 1x6 |
 
+P14 & P15 detail:
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/P14_P15.jpg)
+
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_back.jpg)
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_back2_r.jpg)
 
-P14 & P15 detail:
 
-![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/P14_P15.jpg)
