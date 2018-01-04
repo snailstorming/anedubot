@@ -2,8 +2,8 @@
 
   (general
     (links 106)
-    (no_connects 2)
-    (area 49.924999 49.924999 150.075001 150.075001)
+    (no_connects 0)
+    (area 36.260389 36.260389 163.739611 163.739611)
     (thickness 1.6)
     (drawings 101)
     (tracks 324)
@@ -433,7 +433,7 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 5A4A6D24) (tstamp 59F20C0F)
+  (module Pin_Headers:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 5A4B90C3) (tstamp 59F20C0F)
     (at 75.616 139.878)
     (descr "Through hole pin header")
     (tags "pin header")
@@ -441,7 +441,7 @@
     (fp_text reference P18 (at 1.016 7.366) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value SERVO_CLAMP (at 3.048 2.794 90) (layer F.SilkS)
+    (fp_text value SERVO_CLAMP (at -5.0546 2.7686 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.27 -1.27) (end 1.27 -1.27) (layer B.SilkS) (width 0.15))
@@ -465,7 +465,7 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 5A4A6B26) (tstamp 59F20BED)
+  (module Pin_Headers:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 5A4B90C1) (tstamp 59F20BED)
     (at 73.076 139.878)
     (descr "Through hole pin header")
     (tags "pin header")
@@ -473,7 +473,7 @@
     (fp_text reference P19 (at -1.016 7.366) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value SERVO_LIDAR (at -3.048 2.794 90) (layer F.SilkS)
+    (fp_text value SERVO_LIDAR (at 5.334 2.4892 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.27 -1.27) (end 1.27 -1.27) (layer B.SilkS) (width 0.15))
