@@ -29,7 +29,9 @@
 | J3 | 22 | Pin headers | 1x2 |
 | J4 | 22 | Pin headers | 1x2 |
 
+
 > **WARNING** Be careful to observe D1, D2, BZ1, C1,C2, REG1 and P9 polarity. 
+
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front.jpg)
 
