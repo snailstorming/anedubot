@@ -3,7 +3,7 @@
   (general
     (links 10)
     (no_connects 0)
-    (area 36.260389 36.260389 163.739611 163.739611)
+    (area 79.68 78.685 107.335238 114.732001)
     (thickness 1.6)
     (drawings 10)
     (tracks 36)
@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerners_v2/))
+      (outputdirectory lidar_gerbers/))
   )
 
   (net 0 "")
