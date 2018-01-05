@@ -8,6 +8,8 @@ Video: Solding pin headers in Regulator
 
 # Main board top
 
+Sold short pin headers (component ID:23) to oled screen, motor driver and teensy 3.5:
+
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_Components_headers.jpg)
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_MBoard_Top.jpg)
