@@ -12,3 +12,7 @@ Compontents ID: 17-21 & 24 (Short female socket headers 1x6)
 # Clamp
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_Clamp.jpg)
+
+# Balls
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_Balls.jpg)
