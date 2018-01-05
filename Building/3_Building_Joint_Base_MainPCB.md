@@ -1,6 +1,6 @@
 # Main board bottom
 
-Video: Solding pin headers in Regulator
+> **Video:** Solding pin headers in Regulator
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/kZGVo9eDCLo/0.jpg)](http://www.youtube.com/watch?v=kZGVo9eDCLo)
 
