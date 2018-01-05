@@ -39,6 +39,6 @@ Video: Solding pin headers in Regulator
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_MBoard_Bottom_2.jpg)
 
-# Main board tom
+# Main board top
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_MBoard_Top.jpg)
