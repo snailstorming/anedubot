@@ -13,3 +13,7 @@ Solder short pin headers (component ID:23) to oled screen, motor driver and teen
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_Components_headers.jpg)
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_MBoard_Top.jpg)
+
+# Join base & mainPCB
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_join.jpg)
