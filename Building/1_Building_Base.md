@@ -16,3 +16,7 @@ Compontents ID: 17-21 & 24 (Short female socket headers 1x6)
 # Balls
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_Balls.jpg)
+
+# Infrared sensors
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_AO_LW.jpg)
