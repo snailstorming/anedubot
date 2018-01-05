@@ -3,3 +3,5 @@
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/PCB_lidar_back.jpg)
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/PCB_lidar_front.jpg)
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/PCB_lidar_back_front_r.jpg)
