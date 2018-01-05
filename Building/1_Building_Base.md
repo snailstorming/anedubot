@@ -24,3 +24,9 @@ Compontents ID: 17-21 & 24 (Short female socket headers 1x6)
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_LF.jpg)
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_AO.jpg)
+
+# Wires
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_Wires_Bottom.jpg)
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_Wires_Top.jpg)
