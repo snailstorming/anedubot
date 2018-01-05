@@ -20,3 +20,5 @@ Compontents ID: 17-21 & 24 (Short female socket headers 1x6)
 # Infrared sensors
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_AO_LW.jpg)
+
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_LF.jpg)
