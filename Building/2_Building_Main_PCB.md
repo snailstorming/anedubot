@@ -32,6 +32,7 @@
 
 > **WARNING** Be careful to observe D1, D2, BZ1, C1,C2, REG1 and P9 polarity. 
 
+![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/polarity.jpg)
 
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/Main_front.jpg)
 
