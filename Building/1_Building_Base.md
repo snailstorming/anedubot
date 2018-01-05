@@ -33,4 +33,6 @@ Compontents ID: 17-21 & 24 (Short female socket headers 1x6)
 
 # Main board bottom
 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/https://youtu.be/kZGVo9eDCLo/0.jpg)](http://www.youtube.com/watch?v=https://youtu.be/kZGVo9eDCLo)
+
 ![alt text](https://github.com/snailstorming/anedubot/blob/master/Documentation/Images/B_MBoard_Bottom_2.jpg)
