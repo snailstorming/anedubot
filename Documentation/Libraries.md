@@ -7,7 +7,9 @@ C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\Adafruit_SSD1306
 ```
 
 # LIDAR:
+
 ![alt text](https://github.com/pololu/vl53l0x-arduino)
 
 # MOTORS:
+
 ![alt text](https://github.com/kevinwchang/r2-dr)
