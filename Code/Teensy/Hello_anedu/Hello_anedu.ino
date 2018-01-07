@@ -1,25 +1,25 @@
 #include <Adafruit_SSD1306.h>
 
-#define LED_RED     22
-#define LED_GREEN   23
+#define LED_RED     23
+#define LED_GREEN   22
 
 #define BUTTON1     21
 #define BUTTON2     22
-
+/*
 #define OLED_MOSI   24
 #define OLED_CLK    10
 #define OLED_DC     11
 #define OLED_CS     12
 #define OLED_RESET  25
-
-Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+*/
+//Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 
 void setup() {
   pinMode(LED_RED, OUTPUT);
   pinMode(LED_GREEN, OUTPUT);
-  //pinMode(BUTTON1, INPUT);
-  //pinMode(BUTTON2, INPUT);
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
+//  pinMode(BUTTON1, INPUT_PULLUP);
+//  pinMode(BUTTON2, INPUT_PULLUP);
+//  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
 
   digitalWrite(LED_GREEN, HIGH);
   
@@ -30,7 +30,7 @@ void setup() {
   digitalWrite(LED_RED, HIGH);
   delay(500);
   digitalWrite(LED_RED, LOW);
-
+/*
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
@@ -42,12 +42,13 @@ void setup() {
   display.println("2. Lidar test");
   display.display();
 
-  
+  */
 
 }
 
 void loop() {
-  if (digitalRead(BUTTON1) == HIGH) {
+  
+  if (digitalRead(BUTTON1) == LOW) {
     digitalWrite(LED_RED, HIGH);
     delay(300);
     digitalWrite(LED_RED, LOW);
