@@ -1,5 +1,6 @@
 #include <Servo.h>
 #include <Adafruit_SSD1306.h>
+#include "DRV8835_teensy3.h"
 
 #define pinRedLed     13
 #define pinGreenLed   23
@@ -23,6 +24,7 @@
 int dipPins[] = {26, 27, 28}; //DIP Switch Pins
 
 Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+DRV8835 driveMotors(32, 30, 31, 29);
 
 int i;
 int j;
@@ -50,6 +52,12 @@ Servo servoLidar;
 Servo servoClamp;
 
 void setup() {
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.clearDisplay();
+  display.display();
+
+  driveMotors.init(23437);
+  
   Serial.begin(9600);
   pinMode(pinRedLed, OUTPUT);
   pinMode(pinGreenLed, OUTPUT);
@@ -67,10 +75,6 @@ void setup() {
 
   servoLidar.attach(pinLidarServo);
   servoClamp.attach(pinClampServo); 
-
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-  display.clearDisplay();
-  display.display();
   
   sRedLed = LOW;
   sGreenLed = LOW;
@@ -213,15 +217,29 @@ void loop() {
         Serial.println("Start avoid obstacle test");
         while ((endtime - starttime) <=10000)
         {
-          Serial.print(sPinLeftAO);
-          Serial.print(sPinCenterAO);
-          Serial.println(sPinRightAO);
+
+          if ((sPinCenterAO) || (sPinLeftAO) || (sPinRightAO)){
+            driveMotors.setSpeeds(0,0);
+          }
+          if (!sPinCenterAO) {
+            driveMotors.setSpeeds(-60,-40);
+          }
+
+          if (!sPinLeftAO){
+            driveMotors.setSpeeds(-40,-60);
+          }
+
+          if (!sPinRightAO){
+            driveMotors.setSpeeds(-80,-30);
+          }
+                    
           sPinLeftAO = digitalRead(pinLeftAO);
           sPinCenterAO = digitalRead(pinCenterAO);
           sPinRightAO = digitalRead(pinRightAO);
-          delay(50);
+          delay(10);
           endtime = millis();
         }
+        driveMotors.setSpeeds(0,0);
         Serial.println("End avoid obstacle test");
       
         break;                
