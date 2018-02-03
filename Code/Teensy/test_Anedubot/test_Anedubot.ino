@@ -1,3 +1,10 @@
+//EDIT : Adafruit_SSD1306.h
+//Windows OS: C:\Users\Jordi Guerrero\Dropbox\github\anedubot\Code\Teensy\HardwareTest\Screen\Adafruit_ssd1306 (73-75 line)
+//       #define SSD1306_128_64
+//   // #define SSD1306_128_32
+//   //#define SSD1306_96_16
+
+
 #include <Servo.h>
 #include <Adafruit_SSD1306.h>
 #include "DRV8835_teensy3.h"
@@ -24,13 +31,16 @@
 #define OLED_CS     12
 #define OLED_RESET  25
 
+#define pinXshutL     17
+#define pinXshutR     16
+
 int dipPins[] = {26, 27, 28}; //DIP Switch Pins
 
 Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 DRV8835 driveMotors(32, 30, 31, 29);
 
-VL53L0X sensor;
-VL53L0X sensor2;
+VL53L0X sensorL;
+VL53L0X sensorR;
 
 int i;
 int j;
@@ -51,6 +61,12 @@ int sPinRightAO;
 
 int robotId;
 
+float dSensorL;
+float dSensorR;
+
+int xPoint;
+int yPoint;
+
 int starttime;
 int endtime;
 
@@ -58,32 +74,32 @@ Servo servoLidar;
 Servo servoClamp;
 
 void setup() {
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3D);
   display.clearDisplay();
   display.display();
 
 //change VL53L0X address
-  pinMode(17, OUTPUT);
-  pinMode(16, OUTPUT);
-  digitalWrite(17, LOW);
-  digitalWrite(16, LOW);
+  pinMode(pinXshutL, OUTPUT);
+  pinMode(pinXshutR, OUTPUT);
+  digitalWrite(pinXshutL, LOW);
+  digitalWrite(pinXshutR, LOW);
   delay(500);
   Wire.begin();
   Serial.begin (9600);
-  digitalWrite(17, HIGH);
+  digitalWrite(pinXshutL, HIGH);
   delay(150);
-  sensor.init(true);
+  sensorL.init(true);
   delay(100);
-  sensor.setAddress((uint8_t)22);
-  digitalWrite(16, HIGH);
+  sensorL.setAddress((uint8_t)22);
+  digitalWrite(pinXshutR, HIGH);
     delay(150);
-  sensor2.init(true);
+  sensorR.init(true);
   delay(100);
-  sensor2.setAddress((uint8_t)25);
+  sensorR.setAddress((uint8_t)25);
 //end change VL53L0X address  
 //HIGH_SPEED
-  sensor.setMeasurementTimingBudget(20000);
-  sensor2.setMeasurementTimingBudget(20000);
+  sensorL.setMeasurementTimingBudget(20000);
+  sensorR.setMeasurementTimingBudget(20000);
 
   driveMotors.init(23437);
   
@@ -147,7 +163,8 @@ void setup() {
   Serial.println(" 4. Lidar servo");
   Serial.println(" 5. Clamp servo");
   Serial.println(" 6. Avoid Obstacles");
-  Serial.println(" 7. Mapping");
+  Serial.println(" 7. Lidars");
+  Serial.println(" 8. Mapping");
 }
 
 void loop() {
@@ -155,6 +172,18 @@ void loop() {
     int inByte = Serial.read();
     
     switch (inByte) {
+      case '0':
+        Serial.println("Test program");
+        Serial.println(" 1. Red led");
+        Serial.println(" 2. Green led");
+        Serial.println(" 3. Buzzer");
+        Serial.println(" 4. Lidar servo");
+        Serial.println(" 5. Clamp servo");
+        Serial.println(" 6. Avoid Obstacles");
+        Serial.println(" 7. Lidars");
+        Serial.println(" 8. Mapping");
+        
+        break;
       
       case '1':
         if (sRedLed == LOW){
@@ -279,14 +308,80 @@ void loop() {
         endtime = starttime;
         while ((endtime - starttime) <=10000)
         {
-          Serial.print(sensor.readRangeSingleMillimeters());
+          Serial.print(sensorL.readRangeSingleMillimeters());
           Serial.print(" : ");
-          Serial.println(sensor2.readRangeSingleMillimeters());
+          Serial.println(sensorR.readRangeSingleMillimeters());
           endtime = millis();
         }
         
         break;
       case '8':
+
+          posLidar = 90;
+          
+          display.clearDisplay();
+          display.drawPixel(63, 31, WHITE);
+          display.display();
+          
+          for (posLidar = 90; posLidar <= 180; posLidar += 1){
+            servoLidar.write(posLidar);
+          
+            dSensorL = sensorL.readRangeSingleMillimeters() / 10 ;
+            //Serial.println(dSensorL);
+            yPoint = int(-1*(dSensorL*sin(((float(posLidar)+30)* 71) / 4068))+31);
+            xPoint = int(dSensorL*cos(((float(posLidar)+30)* 71) / 4068)+63);
+            display.drawPixel(xPoint, yPoint, WHITE);
+            
+            dSensorR = sensorR.readRangeSingleMillimeters() / 10 ;
+            //Serial.println(dSensorR);
+            yPoint = int(-1*(dSensorR*sin(((float(posLidar)-30)* 71) / 4068))+31);
+            xPoint = int(dSensorR*cos(((float(posLidar)-30)* 71) / 4068)+63);
+            display.drawPixel(xPoint, yPoint, WHITE);
+          
+            display.display();
+          Serial.println(posLidar);  
+            //delay(15);
+            
+          }
+          
+          
+          for (posLidar = 180; posLidar >= 0; posLidar -= 1){
+            servoLidar.write(posLidar);
+          
+            dSensorL = sensorL.readRangeSingleMillimeters() / 10 ;
+            //Serial.println(dSensorL);
+            yPoint = int(-1*(dSensorL*sin(((float(posLidar)+30)* 71) / 4068))+31);
+            xPoint = int(dSensorL*cos(((float(posLidar)+30)* 71) / 4068)+63);
+            display.drawPixel(xPoint, yPoint, WHITE);
+            
+            dSensorR = sensorR.readRangeSingleMillimeters() / 10 ;
+            //Serial.println(dSensorR);
+            yPoint = int(-1*(dSensorR*sin(((float(posLidar)-30)* 71) / 4068))+31);
+            xPoint = int(dSensorR*cos(((float(posLidar)-30)* 71) / 4068)+63);
+            display.drawPixel(xPoint, yPoint, WHITE);
+          
+            display.display();
+          Serial.println(posLidar);  
+          }
+          for (posLidar = 0; posLidar <= 90; posLidar += 1){
+            servoLidar.write(posLidar);
+          
+            dSensorL = sensorL.readRangeSingleMillimeters() / 10 ;
+            //Serial.println(dSensorL);
+            yPoint = int(-1*(dSensorL*sin(((float(posLidar)+30)* 71) / 4068))+31);
+            xPoint = int(dSensorL*cos(((float(posLidar)+30)* 71) / 4068)+63);
+            display.drawPixel(xPoint, yPoint, WHITE);
+            
+            dSensorR = sensorR.readRangeSingleMillimeters() / 10 ;
+            //Serial.println(dSensorR);
+            yPoint = int(-1*(dSensorR*sin(((float(posLidar)-30)* 71) / 4068))+31);
+            xPoint = int(dSensorR*cos(((float(posLidar)-30)* 71) / 4068)+63);
+            display.drawPixel(xPoint, yPoint, WHITE);
+          
+            display.display();
+          Serial.println(posLidar);  
+          } 
+ 
         break;                
       case '9':
         break;                
