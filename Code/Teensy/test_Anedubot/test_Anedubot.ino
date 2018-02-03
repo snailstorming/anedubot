@@ -13,12 +13,19 @@ int pinRightOF = 7;
 int pinLidarServo = 8;
 int pinClampServo = 9;
 
+int dipPins[] = {26, 27, 28}; //DIP Switch Pins
+
+int i;
+int j;
+
 int posLidar;
 int posClamp;
 
 bool sRedLed;
 bool sGreenLed;
 bool sServoClamp;
+
+int robotId;
 
 Servo servoLidar;
 Servo servoClamp;
@@ -34,6 +41,20 @@ void setup() {
 
   sRedLed = LOW;
   sGreenLed = LOW;
+
+  for(i = 0; i<=3; i++){
+    pinMode(dipPins[i], INPUT_PULLUP);      // sets the dipswitch pins as input
+  }
+    
+  delay(5000);
+  //WHO AM I
+  for(i=0; i<=2; i++){
+  j = (j << 1) | digitalRead(dipPins[i]);   // read the input pin
+  }
+  robotId = abs(j-7);
+  Serial.print("I am :");
+  Serial.println(robotId);
+
 
   delay(1000);
 
