@@ -1,19 +1,28 @@
 #include <Servo.h>
+#include <Adafruit_SSD1306.h>
 
-int pinRedLed = 13;
-int pinGreenLed = 23;
-int pinBuzzer = 22;
-int bluetooth = 1;
-int pinLeftLF = 2;
-int pinCenterLF = 3;
-int pinRightLF = 4;
-int pinLeftAO = 5;
-int pinCenterOF = 6;
-int pinRightOF = 7;
-int pinLidarServo = 8;
-int pinClampServo = 9;
+#define pinRedLed     13
+#define pinGreenLed   23
+#define pinBuzzer     22
+#define bluetooth     1
+#define pinLeftLF     2
+#define pinCenterLF   3
+#define pinRightLF    4
+#define pinLeftAO     5
+#define pinCenterAO   6
+#define pinRightAO    7
+#define pinLidarServo 8
+#define pinClampServo 9
+
+#define OLED_MOSI   24
+#define OLED_CLK    10
+#define OLED_DC     11
+#define OLED_CS     12
+#define OLED_RESET  25
 
 int dipPins[] = {26, 27, 28}; //DIP Switch Pins
+
+Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 
 int i;
 int j;
@@ -25,7 +34,17 @@ bool sRedLed;
 bool sGreenLed;
 bool sServoClamp;
 
+int sPinLeftLF;
+int sPinCenterLF;
+int sPinRightLF;
+int sPinLeftAO;
+int sPinCenterAO;
+int sPinRightAO;
+
 int robotId;
+
+int starttime;
+int endtime;
 
 Servo servoLidar;
 Servo servoClamp;
@@ -35,18 +54,29 @@ void setup() {
   pinMode(pinRedLed, OUTPUT);
   pinMode(pinGreenLed, OUTPUT);
 
+  for(i = 0; i<=2; i++){
+    pinMode(dipPins[i], INPUT_PULLUP);      // sets the dipswitch pins as input
+  }
+
+  pinMode(pinLeftLF, INPUT);
+  pinMode(pinCenterLF, INPUT);
+  pinMode(pinRightLF, INPUT);
+  pinMode(pinLeftAO, INPUT);
+  pinMode(pinCenterAO, INPUT);
+  pinMode(pinRightAO, INPUT);
+
   servoLidar.attach(pinLidarServo);
   servoClamp.attach(pinClampServo); 
 
-
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.clearDisplay();
+  display.display();
+  
   sRedLed = LOW;
   sGreenLed = LOW;
 
-  for(i = 0; i<=3; i++){
-    pinMode(dipPins[i], INPUT_PULLUP);      // sets the dipswitch pins as input
-  }
-    
-  delay(5000);
+
+  delay(2000); //It is needed to show the text in Serial (throught USB) connection
   //WHO AM I
   for(i=0; i<=2; i++){
   j = (j << 1) | digitalRead(dipPins[i]);   // read the input pin
@@ -54,9 +84,20 @@ void setup() {
   robotId = abs(j-7);
   Serial.print("I am :");
   Serial.println(robotId);
+  
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Hello, world!");
+  display.setCursor(0,15);
+  display.println("I am : Robot ");
+  display.setCursor(80,15);
+  display.println(robotId);
+  display.display();
 
 
-  delay(1000);
+  //delay(1000);
 
   posLidar = 90;
   servoLidar.write(posLidar);
@@ -163,6 +204,25 @@ void loop() {
         break;
         
       case '6':
+
+        sPinLeftAO = digitalRead(pinLeftAO);
+        sPinCenterAO = digitalRead(pinCenterAO);
+        sPinRightAO = digitalRead(pinRightAO);
+        starttime = millis();
+        endtime = starttime;
+        Serial.println("Start avoid obstacle test");
+        while ((endtime - starttime) <=10000)
+        {
+          Serial.print(sPinLeftAO);
+          Serial.print(sPinCenterAO);
+          Serial.println(sPinRightAO);
+          sPinLeftAO = digitalRead(pinLeftAO);
+          sPinCenterAO = digitalRead(pinCenterAO);
+          sPinRightAO = digitalRead(pinRightAO);
+          delay(50);
+          endtime = millis();
+        }
+        Serial.println("End avoid obstacle test");
       
         break;                
       case '7':
