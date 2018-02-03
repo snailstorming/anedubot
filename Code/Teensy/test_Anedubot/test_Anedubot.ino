@@ -2,6 +2,9 @@
 #include <Adafruit_SSD1306.h>
 #include "DRV8835_teensy3.h"
 
+#include <Wire.h>
+#include <VL53L0X.h>
+
 #define pinRedLed     13
 #define pinGreenLed   23
 #define pinBuzzer     22
@@ -25,6 +28,9 @@ int dipPins[] = {26, 27, 28}; //DIP Switch Pins
 
 Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 DRV8835 driveMotors(32, 30, 31, 29);
+
+VL53L0X sensor;
+VL53L0X sensor2;
 
 int i;
 int j;
@@ -55,6 +61,29 @@ void setup() {
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   display.clearDisplay();
   display.display();
+
+//change VL53L0X address
+  pinMode(17, OUTPUT);
+  pinMode(16, OUTPUT);
+  digitalWrite(17, LOW);
+  digitalWrite(16, LOW);
+  delay(500);
+  Wire.begin();
+  Serial.begin (9600);
+  digitalWrite(17, HIGH);
+  delay(150);
+  sensor.init(true);
+  delay(100);
+  sensor.setAddress((uint8_t)22);
+  digitalWrite(16, HIGH);
+    delay(150);
+  sensor2.init(true);
+  delay(100);
+  sensor2.setAddress((uint8_t)25);
+//end change VL53L0X address  
+//HIGH_SPEED
+  sensor.setMeasurementTimingBudget(20000);
+  sensor2.setMeasurementTimingBudget(20000);
 
   driveMotors.init(23437);
   
@@ -117,6 +146,8 @@ void setup() {
   Serial.println(" 3. Buzzer");
   Serial.println(" 4. Lidar servo");
   Serial.println(" 5. Clamp servo");
+  Serial.println(" 6. Avoid Obstacles");
+  Serial.println(" 7. Mapping");
 }
 
 void loop() {
@@ -244,6 +275,16 @@ void loop() {
       
         break;                
       case '7':
+        starttime = millis();
+        endtime = starttime;
+        while ((endtime - starttime) <=10000)
+        {
+          Serial.print(sensor.readRangeSingleMillimeters());
+          Serial.print(" : ");
+          Serial.println(sensor2.readRangeSingleMillimeters());
+          endtime = millis();
+        }
+        
         break;
       case '8':
         break;                
