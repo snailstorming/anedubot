@@ -339,9 +339,6 @@ void loop() {
             display.drawPixel(xPoint, yPoint, WHITE);
           
             display.display();
-          Serial.println(posLidar);  
-            //delay(15);
-            
           }
           
           
@@ -361,7 +358,6 @@ void loop() {
             display.drawPixel(xPoint, yPoint, WHITE);
           
             display.display();
-          Serial.println(posLidar);  
           }
           for (posLidar = 0; posLidar <= 90; posLidar += 1){
             servoLidar.write(posLidar);
@@ -379,7 +375,6 @@ void loop() {
             display.drawPixel(xPoint, yPoint, WHITE);
           
             display.display();
-          Serial.println(posLidar);  
           } 
  
         break;                
