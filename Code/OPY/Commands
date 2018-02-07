@@ -1,0 +1,23 @@
+Commands:
+
+Resize filesystem:
+
+# /usr/local/bin/fs_resize
+
+
+Upgrade the system
+
+# apt-get update
+# apt-get upgrade
+
+
+Configure wifi
+
+# nmtui
+
+Check temp
+
+# cat /sys/devices/virtual/thermal/thermal_zone0/temp
+
+Check Rx/Tx:
+# screen /dev/ttyS0
