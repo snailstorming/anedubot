@@ -379,6 +379,30 @@ void loop() {
  
         break;                
       case '9':
+
+        starttime = millis();
+        endtime = starttime;
+        Serial.println("Start line follower test");
+        while ((endtime - starttime) <=10000)
+        {      
+          sPinLeftLF = digitalRead(pinLeftLF);
+          sPinCenterLF = digitalRead(pinCenterLF);
+          sPinRightLF = digitalRead(pinRightLF);
+          
+          display.clearDisplay();
+          display.setTextSize(1);
+          display.setTextColor(WHITE);
+          display.setCursor(0,0);
+          display.println(sPinLeftLF);
+          display.setCursor(10,0);
+          display.println(sPinCenterLF);
+          display.setCursor(20,0);
+          display.println(sPinRightLF);
+          display.display();
+          endtime = millis();
+          delay(100);
+        }
+                        
         break;                
 
     } // switch
