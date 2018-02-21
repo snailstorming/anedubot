@@ -1,5 +1,5 @@
-//EDIT : Adafruit_SSD1306.h
-//Windows OS: C:\Users\Jordi Guerrero\Dropbox\github\anedubot\Code\Teensy\HardwareTest\Screen\Adafruit_ssd1306 (73-75 line)
+// EDIT : Adafruit_SSD1306.h (73-75 line)
+// FOLDER: arduino-1.X.X/hardware/teensy/avr/libraries/Adafruit_SSD1306
 //       #define SSD1306_128_64
 //   // #define SSD1306_128_32
 //   //#define SSD1306_96_16
@@ -8,6 +8,7 @@
 #include <Servo.h>
 #include <Adafruit_SSD1306.h>
 #include "DRV8835_teensy3.h"
+#include <Encoder.h>
 
 #include <Wire.h>
 #include <VL53L0X.h>
@@ -15,6 +16,8 @@
 #define pinRedLed     13
 #define pinGreenLed   23
 #define pinBuzzer     22
+#define button1       21
+#define button2       20
 #define bluetooth     1
 #define pinLeftLF     2
 #define pinCenterLF   3
@@ -38,6 +41,9 @@ int dipPins[] = {26, 27, 28}; //DIP Switch Pins
 
 Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 DRV8835 driveMotors(32, 30, 31, 29);
+
+Encoder lwEnc(15, 14);
+Encoder rwEnc(36, 35);
 
 VL53L0X sensorL;
 VL53L0X sensorR;
@@ -63,6 +69,9 @@ int robotId;
 
 float dSensorL;
 float dSensorR;
+
+long endTicksLeft;
+long endTicksRight;
 
 int xPoint;
 int yPoint;
@@ -97,7 +106,8 @@ void setup() {
   delay(100);
   sensorR.setAddress((uint8_t)25);
 //end change VL53L0X address  
-//HIGH_SPEED
+
+// VL53L0X HIGH_SPEED mode
   sensorL.setMeasurementTimingBudget(20000);
   sensorR.setMeasurementTimingBudget(20000);
 
@@ -106,6 +116,8 @@ void setup() {
   Serial.begin(9600);
   pinMode(pinRedLed, OUTPUT);
   pinMode(pinGreenLed, OUTPUT);
+  pinMode(button1, INPUT_PULLUP);
+  pinMode(button2, INPUT_PULLUP);
 
   for(i = 0; i<=2; i++){
     pinMode(dipPins[i], INPUT_PULLUP);      // sets the dipswitch pins as input
@@ -157,14 +169,15 @@ void setup() {
   sServoClamp = LOW;
 
   Serial.println("Test program");
-  Serial.println(" 1. Red led");
-  Serial.println(" 2. Green led");
-  Serial.println(" 3. Buzzer");
-  Serial.println(" 4. Lidar servo");
-  Serial.println(" 5. Clamp servo");
-  Serial.println(" 6. Avoid Obstacles");
-  Serial.println(" 7. Lidars");
-  Serial.println(" 8. Mapping");
+  Serial.println(" 1. Buzzer, leds, & buttons");
+  Serial.println(" 2. IR & encoders");
+  Serial.println(" 3. Lidar servo");
+  Serial.println(" 4. Clamp servo");
+  Serial.println(" 5. Avoid Obstacles");
+  Serial.println(" 6. Lidars");
+  Serial.println(" 7. Mapping");
+  Serial.println(" 8. Line follower");
+  Serial.println(" 9. Lidar servo calibration");
 }
 
 void loop() {
@@ -174,42 +187,19 @@ void loop() {
     switch (inByte) {
       case '0':
         Serial.println("Test program");
-        Serial.println(" 1. Red led");
-        Serial.println(" 2. Green led");
-        Serial.println(" 3. Buzzer");
-        Serial.println(" 4. Lidar servo");
-        Serial.println(" 5. Clamp servo");
-        Serial.println(" 6. Avoid Obstacles");
-        Serial.println(" 7. Lidars");
-        Serial.println(" 8. Mapping");
+        Serial.println(" 1. Buzzer, leds, & buttons");
+        Serial.println(" 2. IR & encoders");
+        Serial.println(" 3. Lidar servo");
+        Serial.println(" 4. Clamp servo");
+        Serial.println(" 5. Avoid Obstacles");
+        Serial.println(" 6. Lidars");
+        Serial.println(" 7. Mapping");
+        Serial.println(" 8. Line follower");
+        Serial.println(" 9. Lidar servo calibration");
         
         break;
       
       case '1':
-        if (sRedLed == LOW){
-          digitalWrite(pinRedLed, HIGH);
-          sRedLed = HIGH;
-        }
-        else{
-          digitalWrite(pinRedLed, LOW);
-          sRedLed = LOW;
-        }
-        
-        break;
-        
-      case '2':
-        if (sGreenLed == LOW){
-          digitalWrite(pinGreenLed, HIGH);
-          sGreenLed = HIGH;
-        }
-        else{
-          digitalWrite(pinGreenLed, LOW);
-          sGreenLed = LOW;
-        }
-              
-        break;
-        
-      case '3':
         tone(pinBuzzer,2637,100);
         delay(150);
         tone(pinBuzzer,2637,100);
@@ -225,9 +215,90 @@ void loop() {
         tone(pinBuzzer,1568,100);
         delay(575);
         
-        break;
+        digitalWrite(pinRedLed, HIGH);
+        digitalWrite(pinGreenLed, LOW);       
+        delay(300);
+        digitalWrite(pinRedLed, LOW);
+        digitalWrite(pinGreenLed, HIGH); 
+        delay(300);
+        digitalWrite(pinRedLed, HIGH);
+        digitalWrite(pinGreenLed, LOW);       
+        delay(300);
+        digitalWrite(pinRedLed, LOW);
+        digitalWrite(pinGreenLed, HIGH); 
+        delay(300);
+        digitalWrite(pinRedLed, HIGH);
+        digitalWrite(pinGreenLed, LOW);       
+        delay(300);
+        digitalWrite(pinRedLed, LOW);
+        digitalWrite(pinGreenLed, HIGH); 
+        delay(300);
+        digitalWrite(pinGreenLed, LOW);       
+        
+        Serial.println("Start button test");
+        starttime = millis();
+        endtime = starttime;
+        while ((endtime - starttime) <=10000) {        
+          if (digitalRead(button1) == LOW) {
+            tone(pinBuzzer,1568,100);
+            delay(575);
+          }
+          if (digitalRead(button2) == LOW) {
+            tone(pinBuzzer,2637,100);
+            delay(575);
+          }          
+          delay(10);
+          endtime = millis();
+        }        
+        Serial.println("End button test");
 
-      case '4':
+        break;
+        
+      case '2':
+      Serial.println("Start IR & encoders test");
+        starttime = millis();
+        endtime = starttime;
+        while ((endtime - starttime) <=20000) {        
+          sPinLeftAO = digitalRead(pinLeftAO);
+          sPinCenterAO = digitalRead(pinCenterAO);
+          sPinRightAO = digitalRead(pinRightAO);
+
+          sPinLeftLF = digitalRead(pinLeftLF);
+          sPinCenterLF = digitalRead(pinCenterLF);
+          sPinRightLF = digitalRead(pinRightLF);
+
+          endTicksLeft = lwEnc.read();
+          endTicksRight = rwEnc.read();
+
+          Serial.print ("AO: ");
+          Serial.print(sPinLeftAO);
+          Serial.print(" ");
+          Serial.print(sPinCenterAO);
+          Serial.print(" ");
+          Serial.print(sPinRightAO);
+          
+          Serial.print (" | LF: ");
+          Serial.print(sPinLeftLF);
+          Serial.print(" ");
+          Serial.print(sPinCenterLF);
+          Serial.print(" ");
+          Serial.print(sPinRightLF);
+
+          Serial.print(" | Left encoder : ");
+          Serial.print(endTicksLeft);
+          Serial.print(" | Right encoder : ");
+          Serial.println(endTicksRight);
+
+          delay(500);
+          endtime = millis();
+        }
+
+        Serial.println("End IR & encoders test");
+        Serial.println("Press 0 to show the menu");
+              
+        break;
+        
+      case '3':
         posLidar = 90;
         for (posLidar = 90; posLidar <= 180; posLidar += 1){
           servoLidar.write(posLidar);
@@ -244,7 +315,7 @@ void loop() {
       
         break;
         
-      case '5':
+      case '4':
         posClamp = 70;
         servoClamp.write(posClamp);
 
@@ -267,7 +338,7 @@ void loop() {
 
         break;
         
-      case '6':
+      case '5':
 
         sPinLeftAO = digitalRead(pinLeftAO);
         sPinCenterAO = digitalRead(pinCenterAO);
@@ -303,7 +374,7 @@ void loop() {
         Serial.println("End avoid obstacle test");
       
         break;                
-      case '7':
+      case '6':
         starttime = millis();
         endtime = starttime;
         while ((endtime - starttime) <=10000)
@@ -315,7 +386,7 @@ void loop() {
         }
         
         break;
-      case '8':
+      case '7':
 
           posLidar = 90;
           
@@ -377,8 +448,13 @@ void loop() {
             display.display();
           } 
  
-        break;                
+        break;    
+                    
+      case '8':
+        break;
+
       case '9':
+
 
         starttime = millis();
         endtime = starttime;
