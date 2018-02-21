@@ -169,6 +169,7 @@ void setup() {
   sServoClamp = LOW;
 
   Serial.println("Test program");
+  Serial.println(" 0. Print menu");
   Serial.println(" 1. Buzzer, leds, & buttons");
   Serial.println(" 2. IR & encoders");
   Serial.println(" 3. Lidar servo");
@@ -187,6 +188,7 @@ void loop() {
     switch (inByte) {
       case '0':
         Serial.println("Test program");
+        Serial.println(" 0. Print menu");
         Serial.println(" 1. Buzzer, leds, & buttons");
         Serial.println(" 2. IR & encoders");
         Serial.println(" 3. Lidar servo");
@@ -372,9 +374,13 @@ void loop() {
         }
         driveMotors.setSpeeds(0,0);
         Serial.println("End avoid obstacle test");
+        Serial.println("Press 0 to show the menu");
       
         break;                
       case '6':
+
+        Serial.println("Star IR & encoders test");
+      
         starttime = millis();
         endtime = starttime;
         while ((endtime - starttime) <=10000)
@@ -384,6 +390,9 @@ void loop() {
           Serial.println(sensorR.readRangeSingleMillimeters());
           endtime = millis();
         }
+
+        Serial.println("End IR & encoders test");
+        Serial.println("Press 0 to show the menu");
         
         break;
       case '7':
@@ -397,13 +406,13 @@ void loop() {
           for (posLidar = 90; posLidar <= 180; posLidar += 1){
             servoLidar.write(posLidar);
           
-            dSensorL = sensorL.readRangeSingleMillimeters() / 10 ;
+            dSensorL = (sensorL.readRangeSingleMillimeters() - 9) / 10 ; //distance between center and sensor = 9mm
             //Serial.println(dSensorL);
             yPoint = int(-1*(dSensorL*sin(((float(posLidar)+30)* 71) / 4068))+31);
             xPoint = int(dSensorL*cos(((float(posLidar)+30)* 71) / 4068)+63);
             display.drawPixel(xPoint, yPoint, WHITE);
             
-            dSensorR = sensorR.readRangeSingleMillimeters() / 10 ;
+            dSensorR = (sensorR.readRangeSingleMillimeters() - 9) / 10 ; //distance between center and sensor = 9mm
             //Serial.println(dSensorR);
             yPoint = int(-1*(dSensorR*sin(((float(posLidar)-30)* 71) / 4068))+31);
             xPoint = int(dSensorR*cos(((float(posLidar)-30)* 71) / 4068)+63);
@@ -451,34 +460,89 @@ void loop() {
         break;    
                     
       case '8':
+      Serial.println("Start Line follower test");
+        starttime = millis();
+        endtime = starttime;
+        while ((endtime - starttime) <=2000) {        
+
+          sPinLeftLF = digitalRead(pinLeftLF);
+          sPinCenterLF = digitalRead(pinCenterLF);
+          sPinRightLF = digitalRead(pinRightLF);
+
+          Serial.print (" | LF: ");
+          Serial.print(sPinLeftLF);
+          Serial.print(" ");
+          Serial.print(sPinCenterLF);
+          Serial.print(" ");
+          Serial.println(sPinRightLF);
+
+          if (sPinCenterLF == HIGH && sPinLeftLF == sPinRightLF) {
+            driveMotors.setSpeeds(60,50);
+          }
+
+          else if (sPinCenterLF == HIGH && sPinLeftLF == HIGH) {
+            driveMotors.setSpeeds(30,50);
+          }
+          
+          else if (sPinCenterLF == HIGH && sPinRightLF == HIGH) {
+            driveMotors.setSpeeds(60,20);
+          }          
+
+          else {
+            driveMotors.setSpeeds(0,0);
+          }
+
+          delay(10);
+          endtime = millis();
+        }
+        
+        driveMotors.setSpeeds(0,0);
+        Serial.println("Start Line follower test");
+        Serial.println("Press 0 to show the menu");
+        
+      
         break;
 
       case '9':
 
-
-        starttime = millis();
-        endtime = starttime;
-        Serial.println("Start line follower test");
-        while ((endtime - starttime) <=10000)
-        {      
-          sPinLeftLF = digitalRead(pinLeftLF);
-          sPinCenterLF = digitalRead(pinCenterLF);
-          sPinRightLF = digitalRead(pinRightLF);
-          
+        posLidar = 90;
+        for (posLidar = 90; posLidar <= 180; posLidar += 1){
+          servoLidar.write(posLidar);
+          delay(15);
           display.clearDisplay();
-          display.setTextSize(1);
+          display.setTextSize(4);
           display.setTextColor(WHITE);
           display.setCursor(0,0);
-          display.println(sPinLeftLF);
-          display.setCursor(10,0);
-          display.println(sPinCenterLF);
-          display.setCursor(20,0);
-          display.println(sPinRightLF);
+          display.println(posLidar);
           display.display();
-          endtime = millis();
-          delay(100);
+          delay(1000);
         }
-                        
+        servoLidar.write(90);
+        delay(2000);
+        for (posLidar = 90; posLidar >= 0; posLidar -= 1){
+          servoLidar.write(posLidar);
+          delay(15);
+          display.clearDisplay();
+          display.setTextSize(4);
+          display.setTextColor(WHITE);
+          display.setCursor(0,0);
+          display.println(posLidar);
+          display.display();
+          delay(1000);          
+        }
+        servoLidar.write(90);
+        delay(100);
+        display.clearDisplay();
+        display.setTextSize(1);
+        display.setTextColor(WHITE);
+        display.setCursor(0,0);
+        display.println("Hello, world!");
+        display.setCursor(0,15);
+        display.println("I am : Robot ");
+        display.setCursor(80,15);
+        display.println(robotId);
+        display.display();
+        
         break;                
 
     } // switch
