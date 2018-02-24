@@ -166,14 +166,14 @@ void setup() {
   posClamp = 70;
   servoClamp.write(posClamp);
 
-  sServoClamp = LOW;
+  sServoClamp = HIGH;
 
   Serial.println("Test program");
   Serial.println(" 0. Print menu");
-  Serial.println(" 1. Buzzer, leds, & buttons");
+  Serial.println(" 1. Buzzer, leds, buttons & clamp servo");
   Serial.println(" 2. IR & encoders");
   Serial.println(" 3. Lidar servo");
-  Serial.println(" 4. Clamp servo");
+  Serial.println(" 4. Motor calibration");
   Serial.println(" 5. Avoid Obstacles");
   Serial.println(" 6. Lidars");
   Serial.println(" 7. Mapping");
@@ -189,10 +189,10 @@ void loop() {
       case '0':
         Serial.println("Test program");
         Serial.println(" 0. Print menu");
-        Serial.println(" 1. Buzzer, leds, & buttons");
+        Serial.println(" 1. Buzzer, leds, buttons & clamp servo");
         Serial.println(" 2. IR & encoders");
         Serial.println(" 3. Lidar servo");
-        Serial.println(" 4. Clamp servo");
+        Serial.println(" 4. Motor calibration");
         Serial.println(" 5. Avoid Obstacles");
         Serial.println(" 6. Lidars");
         Serial.println(" 7. Mapping");
@@ -243,12 +243,23 @@ void loop() {
         while ((endtime - starttime) <=10000) {        
           if (digitalRead(button1) == LOW) {
             tone(pinBuzzer,1568,100);
+
+            posClamp = 160;
+            servoClamp.write(posClamp);
+            delay(150);
+            posClamp = 166;
+            servoClamp.write(posClamp);   
             delay(575);
+          
           }
           if (digitalRead(button2) == LOW) {
             tone(pinBuzzer,2637,100);
+            posClamp = 70;
+            servoClamp.write(posClamp); 
+
             delay(575);
           }          
+          
           delay(10);
           endtime = millis();
         }        
@@ -318,26 +329,25 @@ void loop() {
         break;
         
       case '4':
-        posClamp = 70;
-        servoClamp.write(posClamp);
 
-        if (sServoClamp == LOW){
-
-          posClamp = 160;
-          servoClamp.write(posClamp);
-          delay(150);
-          posClamp = 166;
-          servoClamp.write(posClamp);          
-       
-          sServoClamp = HIGH;
+        while (digitalRead(button1) == HIGH){
         }
-        else{
-          posClamp = 70;
-          servoClamp.write(posClamp); 
-          
-          sServoClamp = LOW;
+        driveMotors.setSpeeds(80,80);
+        delay(1000);
+        driveMotors.setSpeeds(0,0);
+        
+        while (digitalRead(button1) == HIGH){
         }
-
+        driveMotors.setSpeeds(150,150);
+        delay(1000);
+        driveMotors.setSpeeds(0,0);
+        
+        while (digitalRead(button1) == HIGH){
+        }
+        driveMotors.setSpeeds(200,200);
+        delay(1000);        
+        
+        driveMotors.setSpeeds(0,0);
         break;
         
       case '5':
@@ -463,7 +473,7 @@ void loop() {
       Serial.println("Start Line follower test");
         starttime = millis();
         endtime = starttime;
-        while ((endtime - starttime) <=2000) {        
+        while ((endtime - starttime) <=5000) {        
 
           sPinLeftLF = digitalRead(pinLeftLF);
           sPinCenterLF = digitalRead(pinCenterLF);
@@ -480,12 +490,14 @@ void loop() {
             driveMotors.setSpeeds(60,50);
           }
 
-          else if (sPinCenterLF == HIGH && sPinLeftLF == HIGH) {
-            driveMotors.setSpeeds(30,50);
+          //else if (sPinCenterLF == HIGH && sPinLeftLF == HIGH) {
+          else if (sPinLeftLF == HIGH) {
+            driveMotors.setSpeeds(20,90);
           }
           
-          else if (sPinCenterLF == HIGH && sPinRightLF == HIGH) {
-            driveMotors.setSpeeds(60,20);
+          //else if (sPinCenterLF == HIGH && sPinRightLF == HIGH) {
+          else if (sPinRightLF == HIGH) {
+            driveMotors.setSpeeds(90,20);
           }          
 
           else {
